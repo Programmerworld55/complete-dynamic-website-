@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{> links}}
+</head>
+{{> header}}
+<div class="container-fluid margin_class">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto text-white">
+            <div class="main_content">
+                <form class="temp_form">
+                    <input type="text" id="cityName" placeholder="Enter City Name" autocomplete="off">
+                    <input type="submit" value="search" id="submit_btn">
+                </form>
+            </div>
+            <div class="temp_info text-white">
+                <div class="top_layer">
+                    <p id="day">day</p>
+                    <p id="date">datee</p>
+                </div>
+                <div class="main_layer text-white ">
+                    <p id="city_name">output here</p>
+                    <div class="middle_layer data_hide">
+                        <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                        <p id="temp_status"><i class="fa fa-cloud"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{{> footer}}
+<script src="js/main.js">
+</script>
