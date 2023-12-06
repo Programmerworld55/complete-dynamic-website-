@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{> links}}
+</head>
+<body>
+   {{> header}}
+    <!-- second section  -->
+    <div class="container-fluid margin_class">
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0 card_margin">
+    <div class="card bg-transparent text-white">
+        <div class="card-body">
+            <h2 class="card-title">welcome to my <span class="text-primary">weather</span> site</h2>
+            <h4  class="card-text">just search for your city and get complete weather details</h4>
+            <a href="weather" class="btn btn-primary">check weather</a>
+        </div>
+    </div>
+</div>
+          <div class="col-md-6">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/weather1.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/weather2.jpg" class="w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/weather3.jpg" class="w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer  -->
+      {{> footer}}
+</body>
+</html>
